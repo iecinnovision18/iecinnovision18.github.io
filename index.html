@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Innovision 2018</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Innovision 2K18</a>
 
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -68,8 +68,39 @@
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="" alt="">
         <h1 class="text-uppercase mb-0">Innovision 2k18</h1>
+        <h2 class="font-weight-light mb-0 text-uppercase">Dream.  Create.  Inspire.</h2>
         <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Dream.Create.Inspire.</h2>
+        <table cellpadding="15px"  border="none" align="center" style="border: none;">
+          <tr>
+            <td id="cdown">
+              <h1 class="text-uppercase mb-0" id="day"></h1>
+            </td>
+            <td id="cdown">
+              <h1 class="text-uppercase mb-0" id="hour"></h1>
+            </td>
+            <td id="cdown">
+              <h1 class="text-uppercase mb-0" id="minute"></h1>
+            </td>
+            <td id="cdown">
+              <h1 class="text-uppercase mb-0" id="second"></h1>
+            </td>
+            
+          </tr>
+          <tr>
+            <td id="cdown">
+              <h2 class="font-weight-light mb-0 text-uppercase">DAYS</h2>
+            </td>
+            <td id="cdown">
+              <h2 class="font-weight-light mb-0 text-uppercase">HOURS</h2>
+            </td>
+            <td id="cdown">
+              <h2 class="font-weight-light mb-0 text-uppercase">MINUTES</h2>
+            </td>
+            <td id="cdown">
+              <h2 class="font-weight-light mb-0 text-uppercase">SECONDS</h2>
+            </td>
+          </tr>
+        </table>
       </div>
     </header>
 
@@ -492,11 +523,7 @@
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">IEC Group of Institutions is one of India&#39;s premier educational groups with courses in the field of Engineering, Management, Pharmacy, Hotel Management and Vocational Education. A lot has changed in IEC ever since it embarked on this journey nearly 3 decades ago except the
-            Group&#39;s unflinching commitment to provide quality education to its students. We are committed towards elite undergraduate and postgraduate
-            training and education which is based on excellence in academic and applied research. The mission is to enhance knowledge and train students
-            in the field of science and technology and other areas. IEC Group is one of the fastest growing private educational organization which is
-            currently on development spree. IEC Group of Institutions currently has strength of more than 3000 students.
+            <p class="lead">IEC Group of Institutions is one of India&#39;s premier educational groups with courses in the field of Engineering and Pharmacy. A lot has changed in IEC ever since it embarked on this journey nearly 3 decades ago except the Group&#39;s unflinching commitment to provide quality education to its students. We are committed towards elite undergraduate and postgraduate training and education which is based on excellence in academic and applied research. The mission is to enhance knowledge and train students in the field of science and technology and other areas. IEC Group of Institutions currently has strength of more than 3000 students.
             </div>
           <div class="col-lg-4 mr-auto">
             <p class="lead">We are pleased to inform you that IEC Group of Institutions is going to organize its Annual Sports and Cultural Fest INNOVISION 2018 in its campus on 21 ST to 22 nd March 2018. The three days extravaganza includes mixture of different sporting events. Students from different institutions are invited for the events. It will be our pleasure to have you as a part of “INNOVISION 2018”. You are requested to spread publicity in your Institute, motivate your students to take part in maximum activities in this event.</p>
@@ -655,7 +682,7 @@
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Around the Web</h4>
-            <p class="lead mb-0"><a href="http://www.iec.edu.in/">iec.edu.in</p>
+            <p class="lead mb-0"><a href="http://www.iec.edu.in/">iec.edu.in</a></p>
           </div>
           <div class="col-md-4">
             <h4 class="text-uppercase mb-4">Reach Us</h4>
@@ -668,7 +695,7 @@
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; IEC College</small>
+        <small>Copyright &copy; Design By Alok</small>
       </div>
     </div>
 
@@ -1487,6 +1514,39 @@
 
     <!-- Custom scripts -->
     <script src="js/freelancer.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script type="text/javascript">
+      $("#day")
+      .countdown("2018/03/21", function(event) {
+        $(this).text(
+          event.strftime('%D')
+        );
+      });
+    </script>
+    <script type="text/javascript">
+      $("#hour")
+      .countdown("2018/03/21", function(event) {
+        $(this).text(
+          event.strftime('%H')
+        );
+      });
+    </script>
+    <script type="text/javascript">
+      $("#minute")
+      .countdown("2018/03/21", function(event) {
+        $(this).text(
+          event.strftime('%M')
+        );
+      });
+    </script>
+    <script type="text/javascript">
+      $("#second")
+      .countdown("2018/03/21", function(event) {
+        $(this).text(
+          event.strftime('%S')
+        );
+      });
+    </script>
 
   </body>
 
